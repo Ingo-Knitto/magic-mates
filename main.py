@@ -132,7 +132,7 @@ class Mate(FloatLayout):
         self.max_armor = float(weapon_data.loc[weapon]['max armor'])
         self.max_t = float(weapon_data.loc[weapon]['max t'])
         self.t = random.random() * self.max_t
-        self.button_normal_path = 'gfx/' + str(self.team) + '_' + self.weapon.replace(' ', '_') + '.png'
+        self.button_normal_path = 'gfx/simple/' + str(self.team) + '_' + self.weapon.replace(' ', '_') + '.png'
         
     def change_health(self, damage, heal, source = None, pierce = False):
         if pierce:
